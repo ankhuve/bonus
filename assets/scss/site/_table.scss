@@ -1,0 +1,48 @@
+table.bonus-table{
+  margin: auto 0 rem-calc(7);
+  width: 100%;
+  border: none;
+  text-transform: uppercase;
+
+  thead{
+    background-color: $primary-color;
+
+    th{
+      color: $smoke;
+      font-weight: $font-weight-normal;
+    }
+  }
+
+  img.attachment-thumbnail{
+    height: rem-calc(30);
+    width: auto;
+  }
+
+  .bold{
+    font-weight: $font-weight-bold;
+  }
+
+  .table-row-main{
+    font-size: rem-calc(18);
+  }
+
+  .get-bonus{
+    padding: 0;
+    button{
+      background-color: $secondary-color;
+//      height: 100%;
+//      width: 100%;
+      margin: 0;
+      color: $smoke;
+    }
+    button:hover{
+      color: $white;
+      background-color: scale-color($secondary-color, $lightness: -8%);;
+    }
+  }
+
+}
+
+table.bonus-table-header{
+  margin: rem-calc(50) 0 rem-calc(7);
+}

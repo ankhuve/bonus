@@ -1,0 +1,58 @@
+.top-header-area{
+  background: url('../images/herobg_tall.jpg');
+  background-size: cover;
+  height: rem-calc(450);
+}
+
+.hero{
+  padding-top: rem-calc(65);
+  width: 100%;
+  text-align: center;
+//  color: $smoke;
+  h1{
+    color: $smoke;
+    font-weight: $font-weight-normal;
+  }
+
+  h4{
+    color: $iron;
+    width: 50%;
+    margin: auto;
+  }
+
+  button{
+    margin-top: rem-calc(60);
+    text-transform: uppercase;
+  }
+}
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 70px;
+  height: 70px;
+  background: transparent;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: $smoke;
+}
+.flickity-prev-next-button.no-svg {
+  color: $smoke;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+.flickity-viewport {
+  position: initial;
+}
+
+@media only screen and (max-width: ($topbar-breakpoint)) {
+  .hero{
+    padding-top: rem-calc(30);
+  }
+}

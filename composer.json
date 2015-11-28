@@ -1,0 +1,16 @@
+{
+    "name": "ankhuve/bonus",
+    "description": "Hemsida för översikt av sign-up-bonusar och annat.",
+    "type": "wordpress-theme",
+    "minimum-stability" : "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erik Forsberg",
+            "email": "erik.c.forsberg@gmail.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
