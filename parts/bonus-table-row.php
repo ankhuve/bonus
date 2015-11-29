@@ -30,7 +30,7 @@
             </td>
             <td width="150">
                 <?php if ( get_post_meta($post->ID, 'req', true)){
-                    echo get_post_meta($post->ID, 'req', true);
+                    echo "<b>" . get_post_meta($post->ID, 'req', true) . "x</b> bonusbeloppet";
                 } else{
                     echo "Inget krav";
                 }?>

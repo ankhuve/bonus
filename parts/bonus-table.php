@@ -23,6 +23,18 @@
 </table>
 
     <!-- get bonus list items -->
-    <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part( 'parts/bonus-table-row' ); ?>
-    <?php endwhile; ?>
+    <?php $posts = get_and_sort_by( 'req' ); ?>
+    <?php if( $posts ):
+        foreach( $posts as $post ):
+
+            setup_postdata( $post );
+
+            if ( $post ) : ?>
+
+                <?php get_template_part( 'parts/bonus-table-row' ); ?>
+
+            <?php endif;
+
+        endforeach;
+
+    endif; ?>

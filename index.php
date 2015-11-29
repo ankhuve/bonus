@@ -23,16 +23,17 @@ get_header(); ?>
 
 		<?php do_action( 'foundationpress_before_content' ); ?>
 
+		<!-- bonus table -->
         <?php get_template_part( 'parts/bonus-table' ); ?>
 
 
 
-<!--		--><?php //while ( have_posts() ) : the_post(); ?>
-<!--			--><?php //get_template_part( 'content', get_post_format() ); ?>
-<!--		--><?php //endwhile; ?>
-<!---->
-<!--		--><?php //else : ?>
-<!--			--><?php //get_template_part( 'content', 'none' ); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php get_template_part( 'content', get_post_format() ); ?>
+		<?php endwhile; ?>
+
+		<?php else : ?>
+			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php do_action( 'foundationpress_before_pagination' ); ?>
 

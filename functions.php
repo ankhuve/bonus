@@ -48,4 +48,8 @@ require_once( 'library/custom-nav.php' );
 /** Add protocol relative theme assets */
 require_once( 'library/protocol-relative-theme-assets.php' );
 
+
+/** Custom scripts */
+require_once('library/bonus-list-sortings.php');
+
 ?>

@@ -7,7 +7,7 @@
  */
 
 ?>
-<div class="gallery js-flickity">
+<div class="gallery js-flickity" data-flickity-options='{ "autoPlay": 5000 }'>>
     <div class="gallery-cell hero">
         <div>
             <h1>Sveriges bästa bonussamling för onlinespel</h1>
