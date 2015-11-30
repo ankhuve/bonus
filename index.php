@@ -15,7 +15,9 @@
  */
 
 get_header(); ?>
+<?php get_template_part( 'parts/hero' ); ?>
 
+<section class="container" role="document">
 <div class="row">
 	<?php get_template_part( 'parts/check-if-sidebar-exist' ); ?>
 
@@ -27,10 +29,12 @@ get_header(); ?>
         <?php get_template_part( 'parts/bonus-table' ); ?>
 
 
-
+		<?php $posts = get_posts( array() );
+		if ($posts) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'content', get_post_format() ); ?>
-		<?php endwhile; ?>
+		<?php endwhile;
+			endif; ?>
 
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
@@ -52,5 +56,4 @@ get_header(); ?>
 
 	</div>
 	<?php get_sidebar(); ?>
-</div>
 <?php get_footer(); ?>

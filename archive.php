@@ -17,7 +17,7 @@
  */
 
 get_header(); ?>
-
+</div>
 <div class="row">
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" role="main">

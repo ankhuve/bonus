@@ -8,7 +8,8 @@
  */
 
 get_header(); ?>
-
+</div>
+<section class="container" role="document">
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
 
@@ -50,6 +51,7 @@ get_header(); ?>
 	<div class="large-4 small-12 columns">
 
 	</div>
+
 
 	<?php get_sidebar(); ?>
 </div>

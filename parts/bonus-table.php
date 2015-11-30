@@ -22,19 +22,27 @@
     </thead>
 </table>
 
-    <!-- get bonus list items -->
-    <?php $posts = get_and_sort_by( 'req' ); ?>
-    <?php if( $posts ):
-        foreach( $posts as $post ):
+<!-- get bonus list items -->
+<?php $posts = get_and_sort_by( 'req' ); ?>
+<?php if( $posts ): ?>
 
-            setup_postdata( $post );
+    <div id="bonus-table-rows">
+        <button class="sort" data-sort="req">
+            Sort by req
+        </button>
+        <button class="sort" data-sort="minodds">
+            Sort by minodds
+        </button>
+        <ul class="list">
 
-            if ( $post ) : ?>
-
-                <?php get_template_part( 'parts/bonus-table-row' ); ?>
-
+        <?php foreach( $posts as $post ):
+            if ( $post ) :
+                setup_postdata( $post ); ?>
+                <li>
+                    <?php get_template_part( 'parts/bonus-table-row' );?>
+                </li>
             <?php endif;
-
-        endforeach;
-
-    endif; ?>
+        endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>

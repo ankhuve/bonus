@@ -18,8 +18,12 @@
             <td class="bold table-row-main" width="120">
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </td>
-            <td width="170">
-                <?php echo get_post_meta($post->ID, 'bonus', true); ?>
+            <td width="170" class="bonus">
+                <?php if ( get_post_meta($post->ID, 'bonus', true)){
+                    echo get_post_meta($post->ID, 'bonus', true);
+                } else{
+                    echo "Ingen bonus";
+                }?>
             </td>
             <td width="100">
                 <?php if ( get_post_meta($post->ID, 'bonuscode', true)){
@@ -28,14 +32,14 @@
                     echo "Ingen kod";
                 }?>
             </td>
-            <td width="150">
+            <td width="150" class="req">
                 <?php if ( get_post_meta($post->ID, 'req', true)){
                     echo "<b>" . get_post_meta($post->ID, 'req', true) . "x</b> bonusbeloppet";
                 } else{
                     echo "Inget krav";
                 }?>
             </td>
-            <td class="bold" width="100">
+            <td class="bold minodds" width="100">
                 <?php if ( get_post_meta($post->ID, 'minodds', true)){
                     echo get_post_meta($post->ID, 'minodds', true);
                 } else{
@@ -49,13 +53,6 @@
                     </button>
                 </a>
             </td>
-            <!--    <div class="entry-content">-->
-            <!--        --><?php //the_content( __( 'Continue reading...', 'foundationpress' ) ); ?>
-            <!--    </div>-->
-            <!--    <footer>-->
-            <!--        --><?php //$tag = get_the_tags(); if ( $tag ) { ?><!--<p>--><?php //the_tags(); ?><!--</p>--><?php //} ?>
-            <!--    </footer>-->
-            <!--    <hr />-->
         </tr>
     </table>
 </div>

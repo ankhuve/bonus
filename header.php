@@ -23,8 +23,7 @@
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-precomposed.png">
 
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/node_modules/flickity/css/flickity.css" media="screen">
-<!--		<script src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/node_modules/flickity/dist/flickity.pkgd.min.js"></script>-->
-
+		<script src="http://listjs.com/no-cdn/list.js"></script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -46,8 +45,8 @@
 	?>
     <div class="top-header-area small-12">
         <?php get_template_part( 'parts/top-bar' ); ?>
-        <?php get_template_part( 'parts/hero' ); ?>
-    </div>
+<!--        --><?php //get_template_part( 'parts/hero' ); ?>
+<!--    </div>-->
 
-<section class="container" role="document">
+<!--<section class="container" role="document">-->
 	<?php do_action( 'foundationpress_after_header' ); ?>
