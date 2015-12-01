@@ -15,9 +15,18 @@
         <th width="120">Spelbolag</th>
         <th width="170">Bonus</th>
         <th width="100">Bonuskod</th>
-        <th width="150">Omsättningskrav</th>
-        <th width="100">Min odds</th>
-        <th width="100"></th>
+        <th width="150">
+            <button class="sort" data-sort="req">
+                Omsättningskrav <i class="fa fa-caret-up"></i>
+            </button>
+        </th>
+        <th width="100">
+            <button class="sort" data-sort="minodds">
+                Min odds <i class="fa fa-caret-up"></i>
+            </button>
+        </th>
+        <th width="50" class=""></th>
+        <th width="50" class=""></th>
     </tr>
     </thead>
 </table>
@@ -27,12 +36,12 @@
 <?php if( $posts ): ?>
 
     <div id="bonus-table-rows">
-        <button class="sort" data-sort="req">
-            Sort by req
-        </button>
-        <button class="sort" data-sort="minodds">
-            Sort by minodds
-        </button>
+<!--        <button class="sort" data-sort="req">-->
+<!--            Sort by req-->
+<!--        </button>-->
+<!--        <button class="sort" data-sort="minodds">-->
+<!--            Sort by minodds-->
+<!--        </button>-->
         <ul class="list">
 
         <?php foreach( $posts as $post ):

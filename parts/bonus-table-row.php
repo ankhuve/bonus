@@ -49,7 +49,7 @@
             <td class="get-bonus" width="100">
                 <a href="<?php the_permalink(); ?>">
                     <button class="button">
-                        Hämta bonus
+                        Hämta bonus!
                     </button>
                 </a>
             </td>

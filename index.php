@@ -26,9 +26,11 @@ get_header(); ?>
 		<?php do_action( 'foundationpress_before_content' ); ?>
 
 		<!-- bonus table -->
-        <?php get_template_part( 'parts/bonus-table' ); ?>
+		<section id="bonus-table-area">
+        	<?php get_template_part( 'parts/bonus-table' ); ?>
+		</section>
 
-
+		<!-- latest posts -->
 		<?php $posts = get_posts( array() );
 		if ($posts) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>

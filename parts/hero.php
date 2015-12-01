@@ -10,9 +10,9 @@
     <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": 5000 }'>
         <div class="gallery-cell hero">
             <div>
-                <h1>Sveriges bästa bonussamling för onlinespel</h1>
-                <h4>Vi har samlat spelbolagens bästa bonusar åt dig så du slipper leta.</h4>
-                <button class="button">Hämta din bonus</button>
+                <a href="#">
+                    <img src="https://placehold.it/768x270" alt="">
+                </a>
             </div>
         </div>
         <div class="gallery-cell hero">

@@ -23,7 +23,7 @@
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-precomposed.png">
 
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/node_modules/flickity/css/flickity.css" media="screen">
-		<script src="http://listjs.com/no-cdn/list.js"></script>
+
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

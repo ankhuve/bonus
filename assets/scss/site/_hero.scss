@@ -5,9 +5,10 @@
 }
 
 .hero{
-  padding-top: rem-calc(65);
+  padding-top: rem-calc(30);
   width: 100%;
   text-align: center;
+  padding-bottom: rem-calc(30);
 //  color: $smoke;
   h1{
     color: $smoke;
@@ -49,6 +50,19 @@
 
 .flickity-viewport {
   position: initial;
+}
+
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+  background-color: $smoke;
 }
 
 @media only screen and (max-width: ($topbar-breakpoint)) {

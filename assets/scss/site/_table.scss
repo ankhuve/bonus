@@ -1,4 +1,4 @@
-table.bonus-table{
+.bonus-table{
   margin: auto 0 rem-calc(7);
   width: 100%;
   border: none;
@@ -11,6 +11,13 @@ table.bonus-table{
       color: $smoke;
       font-weight: $font-weight-normal;
     }
+  }
+
+  button.sort{
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
   }
 
   img.attachment-thumbnail{
@@ -37,7 +44,7 @@ table.bonus-table{
     }
     button:hover{
       color: $white;
-      background-color: scale-color($secondary-color, $lightness: -8%);;
+      background-color: scale-color($secondary-color, $lightness: -8%);
     }
   }
 

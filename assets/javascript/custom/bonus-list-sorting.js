@@ -5,4 +5,4 @@ var options = {
     valueNames: [ 'req', 'minodds' ]
 };
 
-var bonusTableList = new List('bonus-table-rows', options);
+var bonusTableList = new List('bonus-table-area', options);
