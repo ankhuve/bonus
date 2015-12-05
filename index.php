@@ -30,21 +30,60 @@ get_header(); ?>
         	<?php get_template_part( 'parts/bonus-table' ); ?>
 		</section>
 
-		<!-- latest posts -->
-		<?php $posts = get_posts( array() );
-		if ($posts) : ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'content', get_post_format() ); ?>
-		<?php endwhile;
-			endif; ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
 
-		<?php do_action( 'foundationpress_before_pagination' ); ?>
+	<?php else : ?>
+		<?php get_template_part( 'content', 'none' ); ?>
+
+<!--		--><?php //do_action( 'foundationpress_before_pagination' ); ?>
 
 	<?php endif;?>
+	<?php do_action( 'foundationpress_before_pagination' ); ?>
 
+
+	<!-- latest posts with category spelbolag -->
+	<?php wp_reset_query(); // reset query to get only the company posts ?>
+	<?php
+	$args = array( 'category_name' => 'spelbolag',
+		'orderby' => 'date',
+		'order' => 'DESC'
+	);
+	query_posts( $args ); ?>
+	<div class="column large-6 small-12">
+		<div class="puff-title">Spelbolag</div>
+		<div>
+			<div class="post-feed">
+				<?php if (have_posts()) : while ( have_posts() ) : the_post(); // new loop for only companies ?>
+					<?php get_template_part( 'content', get_post_format() ); ?>
+				<?php endwhile;
+				else : ?>
+					<?php get_template_part( 'content', 'none' );
+				endif; ?>
+				<?php do_action( 'foundationpress_before_pagination' ); ?>
+			</div>
+		</div>
+	</div>
+
+<!-- latest posts with category artiklar -->
+	<?php wp_reset_query(); // reset query to get only the articles posts ?>
+	<?php
+	$args = array( 'category_name' => 'artiklar',
+		'orderby' => 'date',
+		'order' => 'DESC'
+	);
+	query_posts( $args ); ?>
+	<div class="large-6 small-12 column">
+		<div class="puff-title">Artiklar</div>
+		<div class="post-feed">
+			<?php if (have_posts()) : while ( have_posts() ) : the_post(); // new loop for only companies ?>
+				<?php get_template_part( 'content', get_post_format() ); ?>
+			<?php endwhile;
+			else : ?>
+				<?php get_template_part( 'content', 'none' );
+			endif; ?>
+			<?php do_action( 'foundationpress_before_pagination' ); ?>
+		</div>
+	</div>
 
 
 	<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
@@ -57,5 +96,5 @@ get_header(); ?>
 	<?php do_action( 'foundationpress_after_content' ); ?>
 
 	</div>
-	<?php get_sidebar(); ?>
+<!--	--><?php //get_sidebar(); ?>
 <?php get_footer(); ?>

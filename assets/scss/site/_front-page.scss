@@ -1,0 +1,41 @@
+.post-feed{
+  //background-color: scale-color($body-bg, $lightness: +7%);
+  //padding: rem_calc(20);
+  margin-bottom: rem-calc(20);
+
+  article{
+    background-color: $smoke;
+    margin: rem-calc(10) 0;
+    padding: rem-calc(10) rem-calc(20) rem-calc(5);
+    color: $oil;
+    
+    h2{
+      font-size: rem-calc(25);
+      font-weight: $font-weight-normal;
+      margin-bottom: 0;
+    }
+
+    .post-sub-title{
+      color: $aluminum;
+      margin-top: 0;
+    }
+
+  }
+}
+
+.column{
+  padding-left: rem-calc(5);
+  padding-right: rem-calc(5);
+}
+
+.puff-title{
+  $puff-height: rem-calc(50);
+  background-color: $primary-color;
+  height: $puff-height;
+  margin-bottom: rem-calc(10);
+  text-align: center;
+  font-size: $puff-height / 2;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  line-height: $puff-height;
+}

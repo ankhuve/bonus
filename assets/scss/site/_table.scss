@@ -37,8 +37,10 @@
     padding: 0;
     button{
       background-color: $secondary-color;
-//      height: 100%;
-//      width: 100%;
+      height: rem-calc(60);
+      width: 100%;
+      padding: 0;
+      line-height: rem-calc(60);
       margin: 0;
       color: $smoke;
     }
