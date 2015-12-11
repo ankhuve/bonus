@@ -20,6 +20,32 @@
       margin-top: 0;
     }
 
+    button.read-more{
+      height: rem-calc(45);
+      line-height: rem-calc(45);
+      padding: 0 rem-calc(20);
+      margin: 0 0 rem-calc(10);
+    }
+
+    .post-thumbnail{
+      margin: rem-calc(20) 0 0;
+    }
+
+    button.get-bonus{
+      margin: rem-calc(20) 0;
+      background-color: $secondary-color;
+      color: $smoke;
+    }
+    .get-bonus:hover{
+      color: $white;
+      background-color: scale-color($secondary-color, $lightness: -8%);
+    }
+
+    .right-side{
+      background-color: scale_color($smoke, $lightness: -8%);
+    }
+
+
   }
 }
 

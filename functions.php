@@ -52,4 +52,8 @@ require_once( 'library/protocol-relative-theme-assets.php' );
 /** Custom scripts */
 require_once('library/bonus-list-sortings.php');
 
+require_once('library/custom_excerpt_length.php');
+
+require_once('library/new_excerpt_more.php');
+
 ?>

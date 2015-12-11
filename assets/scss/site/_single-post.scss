@@ -1,9 +1,39 @@
 .custom-single-post{
   background-color: scale-color($body-bg, $lightness: +7%);
   padding: rem-calc(20);
+
+  .entry-title{
+    color: $primary-color;
+    margin-bottom: 0;
+  }
+
+  .post-thumbnail{
+    background-color: scale_color( $body-bg, $lightness: +20%);
+    -webkit-border-radius: rem-calc(10);
+    -moz-border-radius: rem-calc(10);
+    border-radius: rem-calc(10);
+    padding: rem-calc(10);
+    width: auto;
+    float: right;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      height: 70px;
+    }
+  }
+
+  .title-area{
+    margin-bottom: rem-calc(20);
+  }
+
+  time{
+    margin-bottom: rem-calc(20);
+  }
 }
 
-.entry-title{
-  color: $primary-color;
+ul {
+  list-style: none;
 }
 

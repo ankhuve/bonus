@@ -46,7 +46,8 @@ get_header(); ?>
 	<?php
 	$args = array( 'category_name' => 'spelbolag',
 		'orderby' => 'date',
-		'order' => 'DESC'
+		'order' => 'DESC',
+		'posts_per_page' => 2
 	);
 	query_posts( $args ); ?>
 	<div class="column large-6 small-12">
@@ -67,7 +68,8 @@ get_header(); ?>
 <!-- latest posts with category artiklar -->
 	<?php wp_reset_query(); // reset query to get only the articles posts ?>
 	<?php
-	$args = array( 'category_name' => 'artiklar',
+	$args = array(
+		'category_name' => 'artiklar',
 		'orderby' => 'date',
 		'order' => 'DESC'
 	);
