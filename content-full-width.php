@@ -1,12 +1,9 @@
 <?php
 /**
- * The default template for displaying content
- *
- * Used for both single and index/archive/search.
- *
- * @package WordPress
- * @subpackage FoundationPress
- * @since FoundationPress 1.0.0
+ * Created by PhpStorm.
+ * User: Erik
+ * Date: 2015-12-17
+ * Time: 16:39
  */
 
 ?>

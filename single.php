@@ -41,51 +41,51 @@ get_header(); ?>
 
 		<?php do_action( 'foundationpress_after_content' ); ?>
 
-	</div>
 
-	<div class="large-4 small-12 columns">
-		<div class="bonus-info">
-			<ul class="bonus-table">
-				<li id="company-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<p>Bonus</p>
-					<?php if ( get_post_meta($post->ID, 'bonus', true)){
-						echo get_post_meta($post->ID, 'bonus', true);
-					} else{
-						echo "Ingen bonus";
-					}?>
-				</li>
-				<li class="bonus-code">
-				<p>Bonuskod</p>
-					<?php if ( get_post_meta($post->ID, 'bonuscode', true)){
-						echo get_post_meta($post->ID, 'bonuscode', true);
-					} else{
-						echo "Ingen kod";
-					}?>
-				</li>
-				<li class="req">
-				<p>Oms‰ttningskrav</p>
-					<?php if ( get_post_meta($post->ID, 'req', true)){
-						echo "<b>" . get_post_meta($post->ID, 'req', true) . "x</b> bonusbeloppet";
-					} else{
-						echo "Inget krav";
-					}?>
-				</li>
-				<li class="bold minodds">
-					<?php if ( get_post_meta($post->ID, 'minodds', true)){
-						echo get_post_meta($post->ID, 'minodds', true);
-					} else{
-						echo "-";
-					}?>
-				</li>
-				<li class="get-bonus">
-					<a href="<?php the_permalink(); ?>">
-						<button class="button">
-							H‰mta bonus!
-						</button>
-					</a>
-				</li>
-			</ul>
-		</div>
+
+	</div>
+    <div class="large-4 small-12 columns bonus-info">
+        <ul class="bonus-table">
+            <li id="company-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <h4>Bonus</h4>
+                <?php if ( get_post_meta($post->ID, 'bonus', true)){
+                    echo get_post_meta($post->ID, 'bonus', true);
+                } else{
+                    echo "Ingen bonus";
+                }?>
+            </li>
+            <li class="bonus-code">
+            <h4>Bonuskod</h4>
+                <?php if ( get_post_meta($post->ID, 'bonuscode', true)){
+                    echo get_post_meta($post->ID, 'bonuscode', true);
+                } else{
+                    echo "Ingen kod";
+                }?>
+            </li>
+            <li class="req">
+            <h4>Oms√§ttningskrav</h4>
+                <?php if ( get_post_meta($post->ID, 'req', true)){
+                    echo "<b>" . get_post_meta($post->ID, 'req', true) . "x</b> bonusbeloppet";
+                } else{
+                    echo "Inget krav";
+                }?>
+            </li>
+            <li class="bold minodds">
+            <h4>Minsta odds</h4>
+                <?php if ( get_post_meta($post->ID, 'minodds', true)){
+                    echo get_post_meta($post->ID, 'minodds', true);
+                } else{
+                    echo "-";
+                }?>
+            </li>
+            <li class="get-bonus in-post">
+                <a href="<?php the_permalink(); ?>">
+                    <button class="button">
+                        H√§mta bonus!
+                    </button>
+                </a>
+            </li>
+        </ul>
 	</div>
 
 

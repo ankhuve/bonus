@@ -7,7 +7,7 @@
  */
 
 ?>
-    <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": 5000 }'>
+    <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": 5000, "setGallerySize" : false }'>
         <div class="gallery-cell hero">
             <div>
                 <a href="#">

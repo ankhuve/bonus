@@ -2,13 +2,17 @@
   //background-color: scale-color($body-bg, $lightness: +7%);
   //padding: rem_calc(20);
   margin-bottom: rem-calc(20);
+  $post-feed-puff-height: rem-calc(200);
 
   article{
-    background-color: $smoke;
     margin: rem-calc(10) 0;
-    padding: rem-calc(10) rem-calc(20) rem-calc(5);
     color: $oil;
-    
+
+    .feed-post{
+      display: flex;
+      background-color: $secondary-bg-color;
+    }
+
     h2{
       font-size: rem-calc(25);
       font-weight: $font-weight-normal;
@@ -42,7 +46,14 @@
     }
 
     .right-side{
-      background-color: scale_color($smoke, $lightness: -8%);
+      background-color: scale_color($secondary-bg-color, $lightness: -12%);
+      min-height: $post-feed-puff-height;
+    }
+
+    .left-side{
+//      background-color: $secondary-bg-color;
+      padding: rem-calc(10) rem-calc(10) rem-calc(10) rem-calc(20);
+
     }
 
 
@@ -56,6 +67,7 @@
 
 .puff-title{
   $puff-height: rem-calc(50);
+
   background-color: $primary-color;
   height: $puff-height;
   margin-bottom: rem-calc(10);
@@ -64,4 +76,5 @@
   font-weight: $font-weight-bold;
   text-transform: uppercase;
   line-height: $puff-height;
+  color: $secondary-body-font-color;
 }

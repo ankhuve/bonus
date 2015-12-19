@@ -52,17 +52,15 @@ get_header(); ?>
 	query_posts( $args ); ?>
 	<div class="column large-6 small-12">
 		<div class="puff-title">Spelbolag</div>
-		<div>
-			<div class="post-feed">
-				<?php if (have_posts()) : while ( have_posts() ) : the_post(); // new loop for only companies ?>
-					<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php endwhile;
-				else : ?>
-					<?php get_template_part( 'content', 'none' );
-				endif; ?>
-				<?php do_action( 'foundationpress_before_pagination' ); ?>
-			</div>
-		</div>
+        <div class="post-feed">
+            <?php if (have_posts()) : while ( have_posts() ) : the_post(); // new loop for only companies ?>
+                <?php get_template_part( 'content', get_post_format() ); ?>
+            <?php endwhile;
+            else : ?>
+                <?php get_template_part( 'content', 'none' );
+            endif; ?>
+            <?php do_action( 'foundationpress_before_pagination' ); ?>
+        </div>
 	</div>
 
 <!-- latest posts with category artiklar -->
@@ -77,7 +75,7 @@ get_header(); ?>
 	<div class="large-6 small-12 column">
 		<div class="puff-title">Artiklar</div>
 		<div class="post-feed">
-			<?php if (have_posts()) : while ( have_posts() ) : the_post(); // new loop for only companies ?>
+			<?php if (have_posts()) : while ( have_posts() ) : the_post(); // new loop for only articles ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile;
 			else : ?>

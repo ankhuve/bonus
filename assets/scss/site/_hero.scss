@@ -62,7 +62,11 @@
   width: 40px;
   margin: 0;
   border-radius: 0;
-  background-color: $smoke;
+  background-color: $primary-color;
+}
+
+.gallery{
+  height: rem-calc(330);
 }
 
 @media only screen and (max-width: ($topbar-breakpoint)) {

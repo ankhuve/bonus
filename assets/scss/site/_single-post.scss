@@ -1,6 +1,7 @@
 .custom-single-post{
-  background-color: scale-color($body-bg, $lightness: +7%);
+  background-color: $secondary-bg-color;
   padding: rem-calc(20);
+  color: $oil;
 
   .entry-title{
     color: $primary-color;
@@ -33,7 +34,22 @@
   }
 }
 
-ul {
-  list-style: none;
+.bonus-info{
+  background-color: scale_color($secondary-bg-color, $lightness: -12%);
+  color: $oil;
+
+  ul {
+    list-style: none;
+
+    h4{
+      color: $secondary-color;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    .get-bonus.in-post .button{
+      margin: rem-calc(20) 0 rem-calc(10);
+    }
+  }
 }
 
