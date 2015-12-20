@@ -46,19 +46,20 @@
   ul {
     a{
       border-bottom: rem-calc(2) solid $primary-color;
-      webkit-transition: border-bottom-width $topbar-transition-speed ease;
-      -moz-transition: border-bottom-width $topbar-transition-speed ease;
-      -ms-transition: border-bottom-width $topbar-transition-speed ease;
-      -o-transition: border-bottom-width $topbar-transition-speed ease;
-      transition: border-bottom-width $topbar-transition-speed ease;
+
     }
     margin-left: rem-calc(40);
     li {
+      webkit-transition: background-color $topbar-transition-speed ease;
+      -moz-transition: background-color $topbar-transition-speed ease;
+      -ms-transition: background-color $topbar-transition-speed ease;
+      -o-transition: background-color $topbar-transition-speed ease;
+      transition: background-color $topbar-transition-speed ease;
       background: none;
     }
-    li:hover:not(.has-form)>a{
-      background: rgba(0, 0, 0, 0) none;
-      border-bottom: rem-calc(4) solid $primary-color;
+    li:hover{
+      background-color: $primary-color;
+      //border-bottom: rem-calc(4) solid $primary-color;
     }
   }
 }

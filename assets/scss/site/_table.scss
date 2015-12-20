@@ -16,8 +16,16 @@
   button.sort{
     font-size: rem-calc(14);
     text-transform: uppercase;
-    padding: 0;
+    padding: rem-calc(10) rem-calc(10);
     margin: 0;
+    background-color: #ee1b03;
+    -webkit-border-radius: rem-calc(20);
+    -moz-border-radius: rem-calc(20);
+    border-radius: rem-calc(20);
+  }
+
+  button.sort:hover{
+    background-color: scale_color($primary-color, $lightness: -8%);
   }
 
   img.attachment-thumbnail{
@@ -59,4 +67,8 @@ table.bonus-table-header{
 .list{
   list-style-type: none;
   margin-left: 0;
+}
+
+.bonus-table-rows{
+  background-color: $secondary-bg-color;
 }

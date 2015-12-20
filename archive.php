@@ -20,18 +20,23 @@ get_header(); ?>
 </div>
 <div class="row">
 <!-- Row for main content area -->
-	<div class="small-12 large-8 columns" role="main">
+	<div class="small-12 columns" role="main">
 
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'content', get_post_format() ); ?>
-		<?php endwhile; ?>
+		<div class="post-feed archive">
+            <?php while ( have_posts() ) : the_post(); ?>
+                <?php if( has_category( "spelbolag" ) ) :  // check if post is spelbolag
+                    get_template_part( 'content', get_post_format() );
+                else:
+                    get_template_part( 'content-full-width', get_post_format() );
+                endif;
+            endwhile; ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-
+            <?php else : ?>
+                <?php get_template_part( 'content', 'none' ); ?>
+        </div>
 	<?php endif; // End have_posts() check. ?>
 
 	<?php /* Display navigation to next/previous pages when applicable */ ?>

@@ -76,10 +76,10 @@ get_header(); ?>
 		<div class="puff-title">Artiklar</div>
 		<div class="post-feed">
 			<?php if (have_posts()) : while ( have_posts() ) : the_post(); // new loop for only articles ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
+				<?php get_template_part( 'content-full-width', get_post_format() ); ?>
 			<?php endwhile;
 			else : ?>
-				<?php get_template_part( 'content', 'none' );
+				<?php get_template_part( 'content-full-width', 'none' );
 			endif; ?>
 			<?php do_action( 'foundationpress_before_pagination' ); ?>
 		</div>

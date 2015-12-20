@@ -4,14 +4,16 @@
   margin-bottom: rem-calc(20);
   $post-feed-puff-height: rem-calc(200);
 
+  .feed-post{
+    display: flex;
+    //background-color: $secondary-bg-color;
+  }
+
   article{
     margin: rem-calc(10) 0;
     color: $oil;
 
-    .feed-post{
-      display: flex;
-      background-color: $secondary-bg-color;
-    }
+
 
     h2{
       font-size: rem-calc(25);
@@ -31,9 +33,7 @@
       margin: 0 0 rem-calc(10);
     }
 
-    .post-thumbnail{
-      margin: rem-calc(20) 0 0;
-    }
+
 
     button.get-bonus{
       margin: rem-calc(20) 0;
@@ -46,17 +46,36 @@
     }
 
     .right-side{
-      background-color: scale_color($secondary-bg-color, $lightness: -12%);
+      background-color: scale_color($secondary-bg-color, $lightness: -16%);
       min-height: $post-feed-puff-height;
+      padding: 0;
+
+      button{
+        margin: 0;
+      }
+
+      .post-thumbnail{
+        margin: rem-calc(10) rem-calc(10) 0;
+
+        img{
+          //width: 100%;
+        }
+      }
     }
 
     .left-side{
-//      background-color: $secondary-bg-color;
-      padding: rem-calc(10) rem-calc(10) rem-calc(10) rem-calc(20);
+      background-color: $secondary-bg-color;
+      padding: rem-calc(10) rem-calc(10) rem-calc(5) rem-calc(15);
 
     }
 
 
+  }
+}
+
+.post-feed.archive{
+  .button.get-bonus{
+    height: rem-calc(70);
   }
 }
 

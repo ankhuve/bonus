@@ -9,10 +9,6 @@
   }
 
   .post-thumbnail{
-    background-color: scale_color( $body-bg, $lightness: +20%);
-    -webkit-border-radius: rem-calc(10);
-    -moz-border-radius: rem-calc(10);
-    border-radius: rem-calc(10);
     padding: rem-calc(10);
     width: auto;
     float: right;
@@ -35,7 +31,7 @@
 }
 
 .bonus-info{
-  background-color: scale_color($secondary-bg-color, $lightness: -12%);
+  background-color: scale_color($secondary-bg-color, $lightness: -16%);
   color: $oil;
 
   ul {

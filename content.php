@@ -29,15 +29,6 @@
             </div>
         </div>
         <div class="small-4 columns right-side">
-            <?php if (has_post_thumbnail() ): ?>
-                <a href="<?php the_permalink(); ?>">
-                    <div class="post-thumbnail">
-
-                        <?php the_post_thumbnail( array(70)); ?>
-
-                    </div>
-                </a>
-            <?php endif ?>
             <div class="get-bonus-button">
                 <a href="<?php the_permalink(); ?>">
                     <button class="button get-bonus small-12">
@@ -45,6 +36,15 @@
                     </button>
                 </a>
             </div>
+            <?php if (has_post_thumbnail() ): ?>
+                <a href="<?php the_permalink(); ?>">
+                    <div class="post-thumbnail">
+
+                        <?php the_post_thumbnail( ); ?>
+
+                    </div>
+                </a>
+            <?php endif; ?>
         </div>
     </div>
 </article>
