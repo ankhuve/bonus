@@ -58,8 +58,14 @@
         margin: rem-calc(10) rem-calc(10) 0;
 
         img{
-          //width: 100%;
+          max-height: rem-calc(70);
+          max-width: 100%;
+          width: auto;
+          height: auto;
+          display: block;
+          margin: 0 auto;
         }
+
       }
     }
 

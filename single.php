@@ -94,12 +94,17 @@ get_header(); ?>
                     </a>
                 </li>
             </ul>
+            <?php get_sidebar(); ?>
         </div>
+
     <?php endif; ?>
 
-
-
-
-	<?php get_sidebar(); ?>
 </div>
+<div class="row">
+    <div class="small-12 columns">
+        <?php get_template_part( 'parts/spelbolag-feed' );?>
+        <?php get_template_part( 'parts/artiklar-feed' );?>
+    </div>
+</div>
+
 <?php get_footer(); ?>
