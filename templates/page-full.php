@@ -3,8 +3,10 @@
 Template Name: Full Width
 */
 get_header(); ?>
-
-<?php get_template_part( 'parts/featured-image' ); ?>
+</div>
+<div class="hero">
+	<?php get_template_part( 'parts/featured-image' ); ?>
+</div>
 
 <div class="row">
 	<div class="small-12 large-12 columns" role="main">

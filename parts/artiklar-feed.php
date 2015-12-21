@@ -17,7 +17,8 @@ $args = array(
 );
 
 query_posts( $args ); ?>
-<div class="large-6 small-12 column">
+
+<div class="large-6 small-12 columns">
     <a href="<?php echo get_category_link( get_cat_ID( $categoryName ) ); ?>">
 
         <div class="puff-title"><?php echo strtoupper( $categoryName ) ?></div>

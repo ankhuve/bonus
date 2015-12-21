@@ -7,8 +7,6 @@
  * Time: 14:47
  */
 
-
-
 wp_reset_query(); // reset query to get only the company posts
 $categoryName = 'spelbolag';
 $args = array(
@@ -19,7 +17,8 @@ $args = array(
 );
 
 query_posts( $args ); ?>
-<div class="column large-6 small-12">
+
+<div class="columns large-6 small-12">
     <a href="<?php echo get_category_link( get_cat_ID( $categoryName ) ); ?>">
 
         <div class="puff-title"><?php echo strtoupper( $categoryName ) ?></div>

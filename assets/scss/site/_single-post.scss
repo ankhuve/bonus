@@ -2,6 +2,7 @@
   background-color: $secondary-bg-color;
   padding: rem-calc(20);
   color: $oil;
+  margin-bottom: rem-calc(30);
 
   .entry-title{
     color: $primary-color;
@@ -31,11 +32,15 @@
 }
 
 .bonus-info{
-  background-color: scale_color($secondary-bg-color, $lightness: -16%);
+  padding: 0 rem-calc(10);
+  background-color: $secondary-bg-color;
   color: $oil;
 
   ul {
     list-style: none;
+    margin: 0;
+    padding: rem-calc(20) rem-calc(10) rem-calc(10);
+
 
     h4{
       color: $secondary-color;
@@ -44,8 +49,38 @@
     }
 
     .get-bonus.in-post .button{
-      margin: rem-calc(20) 0 rem-calc(10);
+      display: block;
+      margin: rem-calc(20) auto rem-calc(10);
     }
+
+    hr{
+      margin: rem-calc(10);
+    }
+  }
+}
+
+aside#sidebar{
+  margin: rem-calc(30) 0;
+  padding: rem-calc(0) rem-calc(0) rem-calc(10);
+  //background-color: $secondary-bg-color;
+
+  h6{
+    background-color: $primary-color;
+    color: $secondary-body-font-color;
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+    font-size: rem-calc(20);
+    font-weight: bold;
+    text-align: center;
+    padding: rem-calc(8);
+    margin: 0;
+  }
+
+  ul{
+    list-style: none;
+    margin: 0 0 rem-calc(10);
+    padding: rem-calc(20) rem-calc(20);
+    background-color: $secondary-bg-color;
   }
 }
 

@@ -40,21 +40,24 @@ get_header(); ?>
 	<?php endif;?>
 	<?php do_action( 'foundationpress_before_pagination' ); ?>
 
-
+</div>
+<section id="feeds">
 	<?php get_template_part( 'parts/spelbolag-feed' ); ?>
 
 	<?php get_template_part( 'parts/artiklar-feed' ); ?>
+</section>
 
 
-	<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
-		<nav id="post-nav">
-			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-		</nav>
-	<?php } ?>
 
-	<?php do_action( 'foundationpress_after_content' ); ?>
+<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
+	<nav id="post-nav">
+		<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+		<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+	</nav>
+<?php } ?>
 
-</div>
+<?php do_action( 'foundationpress_after_content' ); ?>
+
+
 <!--	--><?php //get_sidebar(); ?>
 <?php get_footer(); ?>
