@@ -12,9 +12,9 @@
 <div class="bonus-table-row">
     <table class="bonus-table">
         <tr id="company-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <td width="30">
-                <?php the_post_thumbnail( 'thumbnail' ); ?>
-            </td>
+<!--            <td width="30">-->
+<!--                --><?php //the_post_thumbnail( 'thumbnail' ); ?>
+<!--            </td>-->
             <td class="bold table-row-main" width="120">
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </td>

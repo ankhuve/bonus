@@ -8,11 +8,12 @@
  */
 
 get_header(); ?>
+<?php get_template_part( 'parts/hero' ); ?>
 
 <div class="row">
-	<div class="small-12 large-8 columns" role="main">
+	<div class="large-12 columns" role="main">
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+		<article class="custom-single-post not-found" >
 			<header>
 				<h1 class="entry-title"><?php _e( 'File Not Found', 'foundationpress' ); ?></h1>
 			</header>

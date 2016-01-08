@@ -95,4 +95,9 @@
   text-transform: uppercase;
   line-height: $puff-height;
   color: $secondary-body-font-color;
+  transition: background-color 0.3s ease-out;
+
+  &:hover{
+    background-color: scale-color($primary-color, $lightness: -8%);
+  }
 }

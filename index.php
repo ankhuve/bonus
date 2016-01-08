@@ -42,9 +42,7 @@ get_header(); ?>
 
 </div>
 <section id="feeds">
-	<?php get_template_part( 'parts/spelbolag-feed' ); ?>
-
-	<?php get_template_part( 'parts/artiklar-feed' ); ?>
+	<?php get_template_part( 'parts/category-feeds' ); ?>
 </section>
 
 
