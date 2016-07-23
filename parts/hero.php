@@ -7,20 +7,7 @@
  */
 
 ?>
-    <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": 5000, "setGallerySize" : false }'>
-        <div class="gallery-cell hero">
-            <div>
-                <a href="#">
-                    <img src="https://placehold.it/768x270" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="gallery-cell hero">
-            <div>
-                <h1>Sveriges bästa bonussamling för onlinespel</h1>
-                <h4>Vi har samlat spelbolagens bästa bonusar åt dig så du slipper leta.</h4>
-                <button class="button">Hämta din bonus</button>
-            </div>
-        </div>
+    <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": 5000, "setGallerySize" : true }'>
+        <?php echo get_template_part( 'parts/hero-slides' ) ;?>
     </div>
 </div>

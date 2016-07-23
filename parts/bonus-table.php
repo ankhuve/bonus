@@ -12,17 +12,17 @@
     <thead>
     <tr>
 <!--        <th width="30"></th>-->
-        <th width="120">Spelbolag</th>
+        <th width="130">Spelbolag</th>
         <th width="170">Bonus</th>
         <th width="100">Bonuskod</th>
         <th width="150">
-            <button class="sort" data-sort="req">
+            <button class="sort bold" data-sort="req">
                 Omsättningskrav
 <!--                <i class="fa fa-caret-up"></i>-->
             </button>
         </th>
         <th width="100">
-            <button class="sort" data-sort="minodds">
+            <button class="sort bold" data-sort="minodds">
                 Min odds
 <!--                <i class="fa fa-caret-up"></i>-->
             </button>

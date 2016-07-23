@@ -25,7 +25,7 @@ query_posts( $args ); ?>
 <!--    </a>-->
     <div class="post-feed">
         <?php if (have_posts()) : while ( have_posts() ) : the_post(); // new loop for only articles ?>
-            <?php get_template_part( 'content-full-width', get_post_format() ); ?>
+            <?php get_template_part( 'content-no-date-or-button', get_post_format() ); ?>
         <?php endwhile;
         else : ?>
             <?php get_template_part( 'content-full-width', 'none' );

@@ -47,7 +47,7 @@
                 }?>
             </td>
             <td class="get-bonus" width="100">
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php echo get_post_meta( $post->ID, 'refurl', true); ?>">
                     <button class="button">
                         Hämta bonus!
                     </button>

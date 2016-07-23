@@ -51,6 +51,12 @@
     .get-bonus.in-post .button{
       display: block;
       margin: rem-calc(20) auto rem-calc(10);
+      background-color: $secondary-color;
+      &:hover{
+        color: $white;
+        background-color: scale-color($secondary-color, $lightness: -8%);
+      }
+
     }
 
     hr{

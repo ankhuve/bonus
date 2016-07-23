@@ -9,16 +9,19 @@
   width: 100%;
   text-align: center;
   padding-bottom: rem-calc(30);
-//  color: $smoke;
+  color: $secondary-body-font-color;
   h1{
-    color: $smoke;
+    color: $secondary-body-font-color;
     font-weight: $font-weight-normal;
   }
 
+  h2, h3, h4, h5{
+    color: scale_color( $secondary-body-font-color, $lightness: -8%);
+    width: 60%;
+  }
+
   h4{
-    color: $iron;
-    width: 50%;
-    margin: auto;
+    margin: rem-calc(20) auto;
   }
 
   button{
@@ -66,7 +69,7 @@
 }
 
 .gallery{
-  height: rem-calc(330);
+  //height: rem-calc(330);
 }
 
 @media only screen and (max-width: ($topbar-breakpoint)) {

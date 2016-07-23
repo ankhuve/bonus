@@ -14,7 +14,7 @@
             <li class="name">
                 <h1>
                     <a href="<?php echo home_url(); ?>">
-                        <img class="top-bar logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_fixed.png" alt="Logo"/>
+                        <img class="top-bar logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/betslogo_white_text_small.png" alt="Logo"/>
                     </a>
                 </h1>
             </li>

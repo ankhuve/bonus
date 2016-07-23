@@ -30,7 +30,7 @@
         </div>
         <div class="small-4 columns right-side">
             <div class="get-bonus-button">
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php echo get_post_meta( $post->ID, 'refurl', true); ?>">
                     <button class="button get-bonus small-12">
                         Hämta bonus!
                     </button>
